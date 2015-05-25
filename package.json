@@ -6,7 +6,7 @@
   "author": "Keith Cirkel <npm@keithcirkel.co.uk> (http://keithcirkel.co.uk/)",
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "^3.1.8",
+    "babel-eslint": "^3.1.9",
     "babelify": "^6.1.1",
     "browserify": "^10.2.1",
     "browserify-ngannotate": "^0.7.3",

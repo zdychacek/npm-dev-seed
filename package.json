@@ -31,7 +31,7 @@
   "browserify": {
     "transform": [
       "babelify",
-    	"browserify-ngannotate",
+      "browserify-ngannotate",
       "envify",
       "uglifyify"
     ]

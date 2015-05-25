@@ -1,4 +1,4 @@
-import { Component, Template } from 'angular-decorators';
+import { Component, Template, Inject } from 'angular-decorators';
 import myModule from './myModule';
 
 @Component({
@@ -8,11 +8,11 @@ import myModule from './myModule';
 	}
 })
 @Template({ inline: '<strong>{{myCounter.counter}}</strong>' })
+@Inject('$element', '$timeout', 'PostFactory')
 class MyCounter {
 
 	counter = 0;
 
-	/*@ngInject*/
 	constructor ($element, $timeout, PostFactory) {
 		this.$timeout = $timeout;
 

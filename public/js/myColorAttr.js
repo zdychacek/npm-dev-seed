@@ -1,9 +1,9 @@
-import { Decorator } from 'angular-decorators';
+import { Decorator, Inject } from 'angular-decorators';
 import myModule from './myModule';
 
 @Decorator({ selector: '[my-color]' })
+@Inject('$element', '$attrs')
 class MyColorAttr {
-	/*@ngInject*/
 	constructor ($element, $attrs) {
 		$element.css({ color: $attrs.myColor });
 	}
